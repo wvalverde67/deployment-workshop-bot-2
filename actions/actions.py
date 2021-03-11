@@ -19,7 +19,7 @@ class ActionHi(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        dispatcher.utter_message(text="Hola desde ... 'action_hi' !")
+        dispatcher.utter_message(text="Hola desde ... 'action_hi' ... pero version 2!")
         dispatcher.utter_message(text="Como estas?")
 
         return []

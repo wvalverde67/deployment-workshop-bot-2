@@ -4,8 +4,8 @@ FROM rasa/rasa-sdk:2.3.1
 COPY actions /app/actions
 
 USER root
-RUN pip install --upgrade pip
-RUN pip install --no-cache-dir -r /app/actions/requirements-actions.txt
+RUN python -m pip install --upgrade pip
+RUN python -m pip install --no-cache-dir -r /app/actions/requirements-actions.txt
 
 USER 1001
 CMD ["start", "--actions", "actions"]
