@@ -3,6 +3,6 @@ services:
   deployment-workshop-bot-2-action-server:
     build: .
     # tag it with the registry of microk8s
-    image: localhost:32000/deployment-workshop-bot-2-action-server:1
+    image: localhost:32000/deployment-workshop-bot-2-action-server:0.0.1
     expose:
       - "5055"
